@@ -1,0 +1,15 @@
+version: 1
+services:
+  - type: web
+    name: discord-bot
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "node index.js"
+    envVars:
+      - key: DISCORD_TOKEN
+        value: ${DISCORD_TOKEN}
+      - key: MONGO_URI
+        value: ${MONGO_URI}
+    github:
+      repo: "username/repository" # Thay thế bằng tên repo GitHub của bạn
