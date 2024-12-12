@@ -12,4 +12,4 @@ services:
       - key: MONGO_URI
         value: ${MONGO_URI}
     github:
-      repo: "username/repository" # Thay thế bằng tên repo GitHub của bạn
+      repo: "username/repository" # Thay thế bằng tên người dùng và tên repo của bạn trên GitHub
