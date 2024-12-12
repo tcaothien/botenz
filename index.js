@@ -307,4 +307,4 @@ client.on('messageCreate', async message => {
 });
 
 // Đăng nhập vào bot với token từ file .env
-client.login(token);
+client.login(process.env.TOKEN);
